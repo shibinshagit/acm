@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALUNOVA — Aluminium Composite Material | Built For America</title>
+  <meta name="description" content="ALUNOVA ACM — high-performance aluminium composite panels for cargo trailers, transport, RVs, and architectural cladding. Built for America." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Top utility bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <a class="topbar__email" href="mailto:info@alu-nova.com">info@alu-nova.com</a>
+      <div class="topbar__phones">
+        <a href="tel:+97167487677"><span>UAE</span> +971-6-7487677</a>
+        <span class="sep" aria-hidden="true">|</span>
+        <a href="tel:+17654912190"><span>USA</span> +1 (765) 491-2190</a>
+        <span class="sep" aria-hidden="true">|</span>
+        <a href="tel:+19123810417"><span>Georgia</span> +1 912 381 0417</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main nav -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="ALUNOVA home">
+        <img src="images/logo-nav.png" alt="ALUNOVA Aluminium Composite Material" width="260" height="48" />
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="index.html" class="nav__link is-active">Home</a>
+
+        <div class="nav__item has-dropdown">
+          <button class="nav__link" type="button" aria-expanded="false">Products</button>
+          <div class="dropdown">
+            <a href="#applications">Cargo Trailers</a>
+            <a href="#applications">Transport Vehicles</a>
+            <a href="#applications">Recreational Vehicles</a>
+            <a href="#applications">Architectural Cladding</a>
+          </div>
+        </div>
+
+        <div class="nav__item has-dropdown">
+          <button class="nav__link" type="button" aria-expanded="false">Specifications</button>
+          <div class="dropdown">
+            <a href="#specifications">Panel Specs</a>
+            <a href="#tds">Technical Data Sheet</a>
+          </div>
+        </div>
+
+        <a href="color-chart.html" class="nav__link">Color Chart</a>
+
+        <div class="nav__item has-dropdown">
+          <button class="nav__link" type="button" aria-expanded="false">Resources</button>
+          <div class="dropdown">
+            <a href="docs/TDS.pdf" target="_blank" rel="noopener">Download TDS</a>
+            <a href="docs/COLOR_CHART.pdf" target="_blank" rel="noopener">Color Chart PDF</a>
+            <a href="docs/PAMPHLET.pdf" target="_blank" rel="noopener">Product Pamphlet</a>
+          </div>
+        </div>
+
+        <a href="#about" class="nav__link">About Us</a>
+        <a href="#contact" class="nav__link">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <h1 class="hero__title">Built For America</h1>
+          <p class="hero__eyebrow">Aluminium Composite Material</p>
+          <p class="hero__lead">
+            High-performance ACM panels with a durable mineral core—engineered for cargo trailers,
+            transport vehicles, and architectural applications that demand strength without the weight.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#applications">Explore Products</a>
+            <a class="btn btn--ghost" href="color-chart.html">View Color Chart</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__frame">
+            <img
+              src="images/hero/trailer.jpg"
+              alt="Cargo trailer with aluminium composite panels"
+              class="hero__img is-active"
+              data-slide="0"
+            />
+            <img
+              src="images/hero/panels.jpg"
+              alt="ALUNOVA aluminium composite panels"
+              class="hero__img"
+              data-slide="1"
+            />
+            <img
+              src="images/hero/architecture.jpg"
+              alt="Architectural cladding with ACM panels"
+              class="hero__img"
+              data-slide="2"
+            />
+          </div>
+          <div class="hero__dots" role="tablist" aria-label="Hero slides">
+            <button type="button" class="is-active" aria-label="Slide 1" data-dot="0"></button>
+            <button type="button" aria-label="Slide 2" data-dot="1"></button>
+            <button type="button" aria-label="Slide 3" data-dot="2"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features bar -->
+    <section class="features" aria-label="Key benefits">
+      <div class="container features__grid">
+        <article class="feature">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M16 24.5l5 5 11-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Exceptional Rigidity</h3>
+          <p>Enhanced core composition for improved strength and a smooth, clean surface ideal for cargo trailers and transport.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M28 10c-6 2-10 8-10 14 0 2 .4 4 1.2 5.8L14 38h8l3-6c1.2.4 2.5.6 3.8.6 8 0 14-6.3 14-14S36 10 28 10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Lightweight Construction</h3>
+          <p>Easy handling and installation without compromising structural performance on the road or on the building.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M10 28c4-8 10-12 14-12s10 4 14 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="16" r="4" stroke="currentColor" stroke-width="2"/><path d="M14 34h20M18 38h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Weather &amp; Impact Resistant</h3>
+          <p>Built for harsh environmental conditions—UV, humidity, salt spray, and daily transport wear.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="18" cy="20" r="8" stroke="currentColor" stroke-width="2"/><circle cx="30" cy="20" r="8" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="30" r="8" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Customizable Color Options</h3>
+          <p>Wide range of vibrant PVDF, HDPE, and PE finishes—from Ocean Blue to Charcoal Metallic.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Product Applications -->
+    <section class="section applications" id="applications">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <h2>Product Applications</h2>
+        </header>
+        <div class="apps-grid">
+          <article class="app-card">
+            <div class="app-card__media">
+              <img src="images/apps/cargo-trailer.jpg" alt="Enclosed cargo trailer" loading="lazy" />
+            </div>
+            <h3>Cargo Trailers</h3>
+          </article>
+          <article class="app-card">
+            <div class="app-card__media">
+              <img src="images/apps/transport.jpg" alt="Transport box truck" loading="lazy" />
+            </div>
+            <h3>Transport Vehicles</h3>
+          </article>
+          <article class="app-card">
+            <div class="app-card__media">
+              <img src="images/apps/rv.jpg" alt="Recreational vehicle" loading="lazy" />
+            </div>
+            <h3>Recreational Vehicles</h3>
+          </article>
+          <article class="app-card">
+            <div class="app-card__media">
+              <img src="images/apps/cladding.jpg" alt="Architectural cladding" loading="lazy" />
+            </div>
+            <h3>Architectural Cladding</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panel Specifications -->
+    <section class="section specs" id="specifications">
+      <div class="container">
+        <header class="section__head section__head--split">
+          <h2>Panel Specifications</h2>
+          <a class="text-link" href="#tds">View Full Specifications →</a>
+        </header>
+        <div class="specs-grid">
+          <article class="spec">
+            <div class="spec__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="10" width="24" height="20" rx="1" stroke="currentColor" stroke-width="1.75"/><path d="M8 18h24M20 10v20" stroke="currentColor" stroke-width="1.75"/></svg>
+            </div>
+            <h3>Standard Thickness</h3>
+            <p class="spec__value">.080" / .012"</p>
+          </article>
+          <article class="spec">
+            <div class="spec__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M6 20h28M10 14v12M30 14v12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Available Widths</h3>
+            <p class="spec__value">48" / 49" <span>(Standard)</span></p>
+          </article>
+          <article class="spec">
+            <div class="spec__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M8 12h24v16H8z" stroke="currentColor" stroke-width="1.75"/><path d="M8 28l24-16" stroke="currentColor" stroke-width="1.75"/></svg>
+            </div>
+            <h3>Available Lengths</h3>
+            <p class="spec__value">78" · 84" · 90½" · 96"</p>
+            <p class="spec__note">Any length up to 200"</p>
+          </article>
+          <article class="spec">
+            <div class="spec__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><circle cx="14" cy="18" r="6" stroke="currentColor" stroke-width="1.75"/><circle cx="24" cy="18" r="6" stroke="currentColor" stroke-width="1.75"/><circle cx="19" cy="26" r="6" stroke="currentColor" stroke-width="1.75"/></svg>
+            </div>
+            <h3>Surface Coating</h3>
+            <p class="spec__value">PVDF / HDPE / PE</p>
+          </article>
+          <article class="spec">
+            <div class="spec__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M10 28V12h20v16" stroke="currentColor" stroke-width="1.75"/><path d="M10 20h20" stroke="currentColor" stroke-width="1.75"/><path d="M14 28h12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Skin Thickness</h3>
+            <p class="spec__value">0.18 mm / 0.18 mm</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TDS -->
+    <section class="section tds" id="tds">
+      <div class="container">
+        <div class="tds-card">
+          <div class="tds-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none">
+              <rect x="14" y="6" width="36" height="52" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M22 18h20M22 28h20M22 38h12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="tds-card__body">
+            <h2>Technical Data Sheet</h2>
+            <p>Download the full TDS for mechanical properties, environmental resistance, surface finish data, and product tolerances.</p>
+            <a class="btn btn--primary" href="docs/TDS.pdf" target="_blank" rel="noopener">Download TDS (PDF)</a>
+          </div>
+          <ul class="tds-card__list">
+            <li>Mechanical Properties</li>
+            <li>Environmental Resistance</li>
+            <li>Surface Finish Properties</li>
+            <li>Product Tolerances</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Color Chart preview -->
+    <section class="section colors" id="colors">
+      <div class="container">
+        <header class="section__head section__head--split">
+          <h2>Color Chart</h2>
+          <a class="text-link" href="color-chart.html">View Full Color Chart →</a>
+        </header>
+        <div class="swatch-grid">
+          <a class="swatch" href="color-chart.html">
+            <img src="images/swatches/ocean-blue.jpg" alt="" loading="lazy" />
+            <span class="swatch__name">Ocean Blue (ASC 0092)</span>
+          </a>
+          <a class="swatch" href="color-chart.html">
+            <img src="images/swatches/glossy-black.jpg" alt="" loading="lazy" />
+            <span class="swatch__name">Glossy Black (ASC 0096)</span>
+          </a>
+          <a class="swatch" href="color-chart.html">
+            <img src="images/swatches/glossy-white.jpg" alt="" loading="lazy" />
+            <span class="swatch__name">Glossy White (ASC 0069)</span>
+          </a>
+          <a class="swatch" href="color-chart.html">
+            <img src="images/swatches/silver-frost.jpg" alt="" loading="lazy" />
+            <span class="swatch__name">Silver Frost (ASC 0103)</span>
+          </a>
+          <a class="swatch" href="color-chart.html">
+            <img src="images/swatches/burgundy.jpg" alt="" loading="lazy" />
+            <span class="swatch__name">Burgundy / Wine Red (ASC 0114)</span>
+          </a>
+          <a class="swatch" href="color-chart.html">
+            <img src="images/swatches/pearl-white.jpg" alt="" loading="lazy" />
+            <span class="swatch__name">Pearl White (ASC 0115)</span>
+          </a>
+          <a class="swatch swatch--more" href="color-chart.html">
+            <span>View All Colors →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose -->
+    <section class="section why" id="about">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <h2>Why Choose ALUNOVA ACM?</h2>
+        </header>
+        <div class="why-grid">
+          <article class="why-item">
+            <div class="why-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M20 6l12 6v10c0 8-5.5 13-12 15-6.5-2-12-7-12-15V12l12-6z" stroke="currentColor" stroke-width="1.75"/></svg>
+            </div>
+            <h3>Superior Strength &amp; Durability</h3>
+          </article>
+          <article class="why-item">
+            <div class="why-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M8 28l8-16h8l8 16H8z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><path d="M14 28v4h12v-4" stroke="currentColor" stroke-width="1.75"/></svg>
+            </div>
+            <h3>Lightweight &amp; Easy to Install</h3>
+          </article>
+          <article class="why-item">
+            <div class="why-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="10" stroke="currentColor" stroke-width="1.75"/><path d="M20 12v8l5 3" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Weather &amp; Impact Resistant</h3>
+          </article>
+          <article class="why-item">
+            <div class="why-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="10" width="10" height="10" fill="currentColor" opacity=".9"/><rect x="22" y="10" width="10" height="10" fill="currentColor" opacity=".55"/><rect x="15" y="22" width="10" height="10" fill="currentColor" opacity=".35"/></svg>
+            </div>
+            <h3>Vibrant Finishes &amp; Custom Colors</h3>
+          </article>
+          <article class="why-item">
+            <div class="why-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M10 28c4-10 16-10 20 0" stroke="currentColor" stroke-width="1.75"/><path d="M14 14h12v6H14z" stroke="currentColor" stroke-width="1.75"/></svg>
+            </div>
+            <h3>Surface Coating &amp; Scratch Resistant</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="images/logo-gray.png" alt="ALUNOVA" width="180" height="33" />
+        <p class="footer__tagline">Built For America</p>
+        <div class="footer__flag" aria-hidden="true">
+          <svg viewBox="0 0 60 36" width="48" height="29">
+            <rect width="60" height="36" fill="#888"/>
+            <rect y="2.77" width="60" height="2.77" fill="#ddd"/>
+            <rect y="8.31" width="60" height="2.77" fill="#ddd"/>
+            <rect y="13.85" width="60" height="2.77" fill="#ddd"/>
+            <rect y="19.38" width="60" height="2.77" fill="#ddd"/>
+            <rect y="24.92" width="60" height="2.77" fill="#ddd"/>
+            <rect y="30.46" width="60" height="2.77" fill="#ddd"/>
+            <rect width="24" height="19.38" fill="#555"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact Us</h4>
+        <p>Alunova Middle East<br />P.O. Box 30103, Ajman, UAE</p>
+        <p>
+          <a href="tel:+97167487677">Tel: +971-6-7487677</a><br />
+          Fax: +971-6-7425196<br />
+          <a href="mailto:info@alu-nova.com">info@alu-nova.com</a>
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4>USA</h4>
+        <p><a href="tel:+17654912190">+1 (765) 491-2190</a></p>
+        <h4 style="margin-top:1rem">Georgia Region</h4>
+        <p><a href="tel:+19123810417">+1 912 381 0417</a></p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#applications">Products</a></li>
+          <li><a href="#specifications">Specifications</a></li>
+          <li><a href="color-chart.html">Color Chart</a></li>
+          <li><a href="docs/TDS.pdf" target="_blank" rel="noopener">Resources</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2024 Alunova. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> <span>|</span> <a href="#">Terms &amp; Conditions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
