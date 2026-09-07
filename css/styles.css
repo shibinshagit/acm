@@ -463,11 +463,23 @@ p {
   flex-wrap: wrap;
 }
 
+.colors__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.25rem;
+}
+
 /* —— Applications —— */
 .apps-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.15rem;
+}
+
+.apps-grid--two {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 760px;
+  margin-inline: auto;
 }
 
 .app-card h3 {
@@ -492,6 +504,14 @@ p {
 }
 
 /* —— Specs —— */
+.specs {
+  padding: 5rem 0;
+}
+
+.specs .section__head {
+  margin-bottom: 2.75rem;
+}
+
 .specs-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -499,15 +519,65 @@ p {
 }
 
 .spec {
-  text-align: left;
-  padding: 0.25rem 0.35rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.35rem 1.35rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  transition:
+    transform 0.25s var(--ease),
+    border-color 0.25s var(--ease),
+    box-shadow 0.25s var(--ease);
+}
+
+.spec::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: var(--ink);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s var(--ease);
+}
+
+.spec:hover {
+  transform: translateY(-4px);
+  border-color: #c4c4c4;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+}
+
+.spec:hover::before {
+  transform: scaleX(1);
+}
+
+.spec__head {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--line-soft);
 }
 
 .spec__icon {
-  width: 34px;
-  height: 34px;
-  color: #666;
-  margin-bottom: 0.7rem;
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  padding: 0.45rem;
+  color: var(--ink-soft);
+  background: var(--surface);
+  border-radius: 10px;
+  transition: background 0.25s var(--ease), color 0.25s var(--ease);
+}
+
+.spec:hover .spec__icon {
+  background: var(--ink);
+  color: var(--white);
 }
 
 .spec__icon svg {
@@ -516,31 +586,102 @@ p {
 }
 
 .spec h3 {
-  font-size: 12px;
+  margin: 0;
+  font-size: 11.5px;
   font-weight: 600;
-  color: var(--ink-soft);
-  letter-spacing: 0.03em;
-  margin-bottom: 0.4rem;
-  text-transform: none;
+  line-height: 1.35;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.spec__body {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 1.25rem 0;
+}
+
+.spec__values {
+  display: grid;
+  gap: 0.45rem;
+  width: 100%;
 }
 
 .spec__value {
-  font-size: 14px;
-  font-weight: 700;
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0.5rem 0.7rem;
   color: var(--ink);
-  letter-spacing: 0.01em;
+  background: var(--surface);
+  border-radius: 8px;
+  transition: background 0.25s var(--ease);
+}
+
+.spec:hover .spec__value {
+  background: var(--surface-2);
+}
+
+.spec__value strong {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
 }
 
 .spec__value span {
   font-size: 11px;
   font-weight: 600;
   color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.spec__tags {
+  display: flex;
+  gap: 0.45rem;
+  width: 100%;
+}
+
+.spec__tags--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.spec__tags--stack {
+  flex-direction: column;
+}
+
+.spec__tags li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  background: var(--surface);
+  border-radius: 8px;
+  font-variant-numeric: tabular-nums;
+  transition: background 0.25s var(--ease);
+}
+
+.spec:hover .spec__tags li {
+  background: var(--surface-2);
 }
 
 .spec__note {
-  margin-top: 0.25rem;
-  font-size: 12px;
+  margin: 0;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line-soft);
+  font-size: 11px;
+  font-weight: 500;
   color: var(--muted);
+  letter-spacing: 0.02em;
 }
 
 /* —— TDS —— */
@@ -622,11 +763,24 @@ p {
   gap: 0.35rem;
 }
 
-.swatch img {
+.swatch img,
+.swatch__color {
   aspect-ratio: 1;
-  object-fit: cover;
-  border: 1px solid var(--line);
   width: 100%;
+  display: block;
+  border: 1px solid var(--line);
+}
+
+.swatch img {
+  object-fit: cover;
+}
+
+.swatch__color {
+  background-color: var(--swatch-color, #ccc);
+}
+
+.swatch__color--light {
+  border-color: #c8c8c8;
 }
 
 .swatch__name {
@@ -684,6 +838,7 @@ p {
   gap: 1.25rem;
 }
 
+.color-full-grid .swatch__color,
 .color-full-grid .swatch img {
   aspect-ratio: 1.1;
 }
@@ -699,9 +854,13 @@ p {
 
 /* —— Why —— */
 .why {
-  background: var(--white);
+  background: var(--surface);
   border-top: 1px solid var(--line-soft);
-  padding: 3.75rem 0;
+  padding: 5rem 0;
+}
+
+.why .section__head {
+  margin-bottom: 2.75rem;
 }
 
 .why-grid {
@@ -712,28 +871,43 @@ p {
 
 .why-item {
   text-align: center;
-  padding: 0.35rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
 }
 
-.why-item__icon {
-  width: 40px;
-  height: 40px;
-  margin: 0 auto 0.7rem;
-  color: #666;
+.why-item:hover {
+  border-color: #bbb;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
-.why-item__icon svg {
+.why-item__media {
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.why-item__media img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s var(--ease);
+}
+
+.why-item:hover .why-item__media img {
+  transform: scale(1.05);
 }
 
 .why-item h3 {
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 700;
   letter-spacing: 0.03em;
-  line-height: 1.35;
-  color: var(--ink-soft);
+  line-height: 1.4;
+  color: var(--ink);
   text-transform: none;
+  padding: 1.1rem 0.85rem 1.25rem;
 }
 
 /* —— Footer —— */
@@ -912,9 +1086,16 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .swatch-grid,
+  .swatch-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .specs-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .spec__body {
+    padding: 1rem 0;
   }
 
   .topbar__phones {

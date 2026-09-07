@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ALUNOVA — Aluminium Composite Material | Built For America</title>
-  <meta name="description" content="ALUNOVA ACM — high-performance aluminium composite panels for cargo trailers, transport, RVs, and architectural cladding. Built for America." />
+  <meta name="description" content="ALUNOVA ACM — high-performance aluminium composite panels for cargo trailers and transport vehicles. Built for America." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet" />
@@ -44,8 +44,6 @@
           <div class="dropdown">
             <a href="#applications">Cargo Trailers</a>
             <a href="#applications">Transport Vehicles</a>
-            <a href="#applications">Recreational Vehicles</a>
-            <a href="#applications">Architectural Cladding</a>
           </div>
         </div>
 
@@ -58,6 +56,7 @@
         </div>
 
         <a href="color-chart.html" class="nav__link">Color Chart</a>
+        <a href="truck-viewer/dist/index.html" class="nav__link">Color Visualizer</a>
 
         <div class="nav__item has-dropdown">
           <button class="nav__link" type="button" aria-expanded="false">Resources</button>
@@ -65,6 +64,7 @@
             <a href="docs/TDS.pdf" target="_blank" rel="noopener">Download TDS</a>
             <a href="docs/COLOR_CHART.pdf" target="_blank" rel="noopener">Color Chart PDF</a>
             <a href="docs/PAMPHLET.pdf" target="_blank" rel="noopener">Product Pamphlet</a>
+            <a href="truck-viewer/dist/index.html">Color Visualizer</a>
           </div>
         </div>
 
@@ -82,12 +82,12 @@
           <h1 class="hero__title">Built For America</h1>
           <p class="hero__eyebrow">Aluminium Composite Material</p>
           <p class="hero__lead">
-            High-performance ACM panels with a durable mineral core—engineered for cargo trailers,
-            transport vehicles, and architectural applications that demand strength without the weight.
+            High-performance ACM panels with a durable mineral core—engineered for cargo trailers
+            and transport vehicles that demand strength, durability, and lightweight performance on the road.
           </p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#applications">Explore Products</a>
-            <a class="btn btn--ghost" href="color-chart.html">View Color Chart</a>
+            <a class="btn btn--ghost" href="truck-viewer/dist/index.html">Visualize Colors</a>
           </div>
         </div>
         <div class="hero__visual">
@@ -105,8 +105,8 @@
               data-slide="1"
             />
             <img
-              src="images/hero/architecture.jpg"
-              alt="Architectural cladding with ACM panels"
+              src="images/apps/transport.jpg"
+              alt="Transport vehicle with aluminium composite panels"
               class="hero__img"
               data-slide="2"
             />
@@ -135,7 +135,7 @@
             <svg viewBox="0 0 48 48" fill="none"><path d="M28 10c-6 2-10 8-10 14 0 2 .4 4 1.2 5.8L14 38h8l3-6c1.2.4 2.5.6 3.8.6 8 0 14-6.3 14-14S36 10 28 10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
           </div>
           <h3>Lightweight Construction</h3>
-          <p>Easy handling and installation without compromising structural performance on the road or on the building.</p>
+          <p>Easy handling and installation without compromising structural performance on the road.</p>
         </article>
         <article class="feature">
           <div class="feature__icon" aria-hidden="true">
@@ -160,7 +160,7 @@
         <header class="section__head section__head--center">
           <h2>Product Applications</h2>
         </header>
-        <div class="apps-grid">
+        <div class="apps-grid apps-grid--two">
           <article class="app-card">
             <div class="app-card__media">
               <img src="images/apps/cargo-trailer.jpg" alt="Enclosed cargo trailer" loading="lazy" />
@@ -172,18 +172,6 @@
               <img src="images/apps/transport.jpg" alt="Transport box truck" loading="lazy" />
             </div>
             <h3>Transport Vehicles</h3>
-          </article>
-          <article class="app-card">
-            <div class="app-card__media">
-              <img src="images/apps/rv.jpg" alt="Recreational vehicle" loading="lazy" />
-            </div>
-            <h3>Recreational Vehicles</h3>
-          </article>
-          <article class="app-card">
-            <div class="app-card__media">
-              <img src="images/apps/cladding.jpg" alt="Architectural cladding" loading="lazy" />
-            </div>
-            <h3>Architectural Cladding</h3>
           </article>
         </div>
       </div>
@@ -198,40 +186,82 @@
         </header>
         <div class="specs-grid">
           <article class="spec">
-            <div class="spec__icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="10" width="24" height="20" rx="1" stroke="currentColor" stroke-width="1.75"/><path d="M8 18h24M20 10v20" stroke="currentColor" stroke-width="1.75"/></svg>
+            <div class="spec__head">
+              <span class="spec__icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="10" width="24" height="20" rx="1" stroke="currentColor" stroke-width="1.75"/><path d="M8 18h24M20 10v20" stroke="currentColor" stroke-width="1.75"/></svg>
+              </span>
+              <h3>Standard Thickness</h3>
             </div>
-            <h3>Standard Thickness</h3>
-            <p class="spec__value">.080" / .012"</p>
+            <div class="spec__body">
+              <div class="spec__values">
+                <p class="spec__value"><strong>.080</strong><span>in</span></p>
+                <p class="spec__value"><strong>.012</strong><span>in</span></p>
+              </div>
+            </div>
+            <p class="spec__note">Panel thickness options</p>
           </article>
           <article class="spec">
-            <div class="spec__icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40" fill="none"><path d="M6 20h28M10 14v12M30 14v12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+            <div class="spec__head">
+              <span class="spec__icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none"><path d="M6 20h28M10 14v12M30 14v12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+              </span>
+              <h3>Available Widths</h3>
             </div>
-            <h3>Available Widths</h3>
-            <p class="spec__value">48" / 49" <span>(Standard)</span></p>
+            <div class="spec__body">
+              <div class="spec__values">
+                <p class="spec__value"><strong>48</strong><span>in</span></p>
+                <p class="spec__value"><strong>49</strong><span>in</span></p>
+              </div>
+            </div>
+            <p class="spec__note">Standard sizes</p>
           </article>
           <article class="spec">
-            <div class="spec__icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40" fill="none"><path d="M8 12h24v16H8z" stroke="currentColor" stroke-width="1.75"/><path d="M8 28l24-16" stroke="currentColor" stroke-width="1.75"/></svg>
+            <div class="spec__head">
+              <span class="spec__icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none"><path d="M8 12h24v16H8z" stroke="currentColor" stroke-width="1.75"/><path d="M8 28l24-16" stroke="currentColor" stroke-width="1.75"/></svg>
+              </span>
+              <h3>Available Lengths</h3>
             </div>
-            <h3>Available Lengths</h3>
-            <p class="spec__value">78" · 84" · 90½" · 96"</p>
+            <div class="spec__body">
+              <ul class="spec__tags spec__tags--grid">
+                <li>78"</li>
+                <li>84"</li>
+                <li>90½"</li>
+                <li>96"</li>
+              </ul>
+            </div>
             <p class="spec__note">Any length up to 200"</p>
           </article>
           <article class="spec">
-            <div class="spec__icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40" fill="none"><circle cx="14" cy="18" r="6" stroke="currentColor" stroke-width="1.75"/><circle cx="24" cy="18" r="6" stroke="currentColor" stroke-width="1.75"/><circle cx="19" cy="26" r="6" stroke="currentColor" stroke-width="1.75"/></svg>
+            <div class="spec__head">
+              <span class="spec__icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none"><circle cx="14" cy="18" r="6" stroke="currentColor" stroke-width="1.75"/><circle cx="24" cy="18" r="6" stroke="currentColor" stroke-width="1.75"/><circle cx="19" cy="26" r="6" stroke="currentColor" stroke-width="1.75"/></svg>
+              </span>
+              <h3>Surface Coating</h3>
             </div>
-            <h3>Surface Coating</h3>
-            <p class="spec__value">PVDF / HDPE / PE</p>
+            <div class="spec__body">
+              <ul class="spec__tags spec__tags--stack">
+                <li>PVDF</li>
+                <li>HDPE</li>
+                <li>PE</li>
+              </ul>
+            </div>
+            <p class="spec__note">Coating options</p>
           </article>
           <article class="spec">
-            <div class="spec__icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40" fill="none"><path d="M10 28V12h20v16" stroke="currentColor" stroke-width="1.75"/><path d="M10 20h20" stroke="currentColor" stroke-width="1.75"/><path d="M14 28h12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+            <div class="spec__head">
+              <span class="spec__icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none"><path d="M10 28V12h20v16" stroke="currentColor" stroke-width="1.75"/><path d="M10 20h20" stroke="currentColor" stroke-width="1.75"/><path d="M14 28h12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+              </span>
+              <h3>Skin Thickness</h3>
             </div>
-            <h3>Skin Thickness</h3>
-            <p class="spec__value">0.18 mm / 0.18 mm</p>
+            <div class="spec__body">
+              <div class="spec__values">
+                <p class="spec__value"><strong>0.18</strong><span>mm</span></p>
+                <p class="spec__value"><strong>0.18</strong><span>mm</span></p>
+              </div>
+            </div>
+            <p class="spec__note">Top &amp; bottom skin</p>
           </article>
         </div>
       </div>
@@ -267,31 +297,34 @@
       <div class="container">
         <header class="section__head section__head--split">
           <h2>Color Chart</h2>
-          <a class="text-link" href="color-chart.html">View Full Color Chart →</a>
+          <div class="colors__links">
+            <a class="text-link" href="truck-viewer/dist/index.html">Try Color Visualizer →</a>
+            <a class="text-link" href="color-chart.html">View Full Color Chart →</a>
+          </div>
         </header>
         <div class="swatch-grid">
           <a class="swatch" href="color-chart.html">
-            <img src="images/swatches/ocean-blue.jpg" alt="" loading="lazy" />
+            <div class="swatch__color" style="--swatch-color: #154b90"></div>
             <span class="swatch__name">Ocean Blue (ASC 0092)</span>
           </a>
           <a class="swatch" href="color-chart.html">
-            <img src="images/swatches/glossy-black.jpg" alt="" loading="lazy" />
+            <div class="swatch__color" style="--swatch-color: #231f20"></div>
             <span class="swatch__name">Glossy Black (ASC 0096)</span>
           </a>
           <a class="swatch" href="color-chart.html">
-            <img src="images/swatches/glossy-white.jpg" alt="" loading="lazy" />
+            <div class="swatch__color swatch__color--light" style="--swatch-color: #ffffff"></div>
             <span class="swatch__name">Glossy White (ASC 0069)</span>
           </a>
           <a class="swatch" href="color-chart.html">
-            <img src="images/swatches/silver-frost.jpg" alt="" loading="lazy" />
+            <div class="swatch__color" style="--swatch-color: #96a6a3"></div>
             <span class="swatch__name">Silver Frost (ASC 0103)</span>
           </a>
           <a class="swatch" href="color-chart.html">
-            <img src="images/swatches/burgundy.jpg" alt="" loading="lazy" />
+            <div class="swatch__color" style="--swatch-color: #671a13"></div>
             <span class="swatch__name">Burgundy / Wine Red (ASC 0114)</span>
           </a>
           <a class="swatch" href="color-chart.html">
-            <img src="images/swatches/pearl-white.jpg" alt="" loading="lazy" />
+            <div class="swatch__color swatch__color--light" style="--swatch-color: #fcfadd"></div>
             <span class="swatch__name">Pearl White (ASC 0115)</span>
           </a>
           <a class="swatch swatch--more" href="color-chart.html">
@@ -309,32 +342,32 @@
         </header>
         <div class="why-grid">
           <article class="why-item">
-            <div class="why-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40" fill="none"><path d="M20 6l12 6v10c0 8-5.5 13-12 15-6.5-2-12-7-12-15V12l12-6z" stroke="currentColor" stroke-width="1.75"/></svg>
+            <div class="why-item__media">
+              <img src="images/why/strength.jpg" alt="Rigid aluminium composite panel stack" loading="lazy" />
             </div>
             <h3>Superior Strength &amp; Durability</h3>
           </article>
           <article class="why-item">
-            <div class="why-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40" fill="none"><path d="M8 28l8-16h8l8 16H8z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><path d="M14 28v4h12v-4" stroke="currentColor" stroke-width="1.75"/></svg>
+            <div class="why-item__media">
+              <img src="images/why/lightweight.jpg" alt="Lightweight ACM panel installation" loading="lazy" />
             </div>
             <h3>Lightweight &amp; Easy to Install</h3>
           </article>
           <article class="why-item">
-            <div class="why-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="10" stroke="currentColor" stroke-width="1.75"/><path d="M20 12v8l5 3" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+            <div class="why-item__media">
+              <img src="images/why/weather.jpg" alt="Transport vehicle in harsh weather conditions" loading="lazy" />
             </div>
             <h3>Weather &amp; Impact Resistant</h3>
           </article>
           <article class="why-item">
-            <div class="why-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="10" width="10" height="10" fill="currentColor" opacity=".9"/><rect x="22" y="10" width="10" height="10" fill="currentColor" opacity=".55"/><rect x="15" y="22" width="10" height="10" fill="currentColor" opacity=".35"/></svg>
+            <div class="why-item__media">
+              <img src="images/why/colors.jpg" alt="Vibrant ACM color finishes" loading="lazy" />
             </div>
             <h3>Vibrant Finishes &amp; Custom Colors</h3>
           </article>
           <article class="why-item">
-            <div class="why-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40" fill="none"><path d="M10 28c4-10 16-10 20 0" stroke="currentColor" stroke-width="1.75"/><path d="M14 14h12v6H14z" stroke="currentColor" stroke-width="1.75"/></svg>
+            <div class="why-item__media">
+              <img src="images/why/coating.jpg" alt="Scratch-resistant PVDF surface coating" loading="lazy" />
             </div>
             <h3>Surface Coating &amp; Scratch Resistant</h3>
           </article>
@@ -347,7 +380,7 @@
   <footer class="footer" id="contact">
     <div class="container footer__grid">
       <div class="footer__brand">
-        <img src="images/logo-gray.png" alt="ALUNOVA" width="180" height="33" />
+        <img src="images/logo-footer.png" alt="ALUNOVA" width="180" height="33" />
         <p class="footer__tagline">Built For America</p>
         <div class="footer__flag" aria-hidden="true">
           <svg viewBox="0 0 60 36" width="48" height="29">
@@ -386,6 +419,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="#applications">Products</a></li>
           <li><a href="#specifications">Specifications</a></li>
+          <li><a href="truck-viewer/dist/index.html">Color Visualizer</a></li>
           <li><a href="color-chart.html">Color Chart</a></li>
           <li><a href="docs/TDS.pdf" target="_blank" rel="noopener">Resources</a></li>
           <li><a href="#about">About Us</a></li>

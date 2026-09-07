@@ -1,6 +1,10 @@
 .DS_Store
 **/.DS_Store
 images/logo-clean-src.png
-images/logo.png
-images/logo-footer.png
 images/logo-nav@2x.png
+images/logo-red.png
+images/logo-red-footer.png
+images/logo-gray.png
+
+# 3D color visualizer (large model + build output, kept local)
+truck-viewer/
